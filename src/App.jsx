@@ -1,8 +1,8 @@
-import Navigation from "./components/Navigation";
+import AppRoutes from "./components/AppRoutes";
 import "./styles/main.scss";
 
 function App() {
-    return <Navigation />;
+    return <AppRoutes />;
 }
 
 export default App;
