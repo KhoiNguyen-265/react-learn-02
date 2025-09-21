@@ -1,0 +1,73 @@
+.card {
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    max-width: 600px;
+    width: 90%;
+    background: linear-gradient(135deg, #79f1a4 10%, #0e5cad 100%);
+    border-radius: 12px;
+
+    &__title {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__dropdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        font-size: 1.8rem;
+
+        select {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: #333;
+        }
+    }
+
+    &__display {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 3.6rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__temp {
+        font-size: 5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__weather {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__humidity {
+        @extend .card__weather;
+    }
+
+    &__btn {
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        background: transparent;
+        display: inline-block;
+        outline: none;
+        border: 2px solid #ccc;
+        color: #fff;
+        cursor: pointer;
+    }
+}
